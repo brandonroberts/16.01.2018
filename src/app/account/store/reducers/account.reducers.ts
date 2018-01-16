@@ -45,11 +45,6 @@ export function accountReducer(
 }
 
 // gibt die teile des States
-export const getAccountItems = (state: AccountState) => {
-  if (!state) {
-    return [];
-  }
-  return state.accountItems;
-};
+export const getAccountItems = (state: AccountState) => state.accountItems;
 export const getAccountLoading = (state: AccountState) => state.loading;
 export const getAccountLoaded = (state: AccountState) => state.loaded;
