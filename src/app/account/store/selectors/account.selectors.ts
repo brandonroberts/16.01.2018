@@ -9,14 +9,14 @@ export const getCompleteAccountState = createSelector(
   (state: fromFeature.AccountState) => state.account
 );
 export const getAccountLoading = createSelector(
-  this.getCompleteAccountState,
+  getCompleteAccountState,
   fromReducer.getAccountLoading
 );
 export const getAccountLoaded = createSelector(
-  this.getCompleteAccountState,
+  getCompleteAccountState,
   fromReducer.getAccountLoaded
 );
 export const getAllAccountItems = createSelector(
-  this.getCompleteAccountState,
+  getCompleteAccountState,
   fromReducer.getAccountItems
 );
